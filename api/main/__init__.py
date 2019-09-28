@@ -2,4 +2,4 @@ from flask_restplus import Api, Namespace
 
 api = Namespace('api', description='Shipy APIs')
 
-from . import *
+from . import order, assignee
