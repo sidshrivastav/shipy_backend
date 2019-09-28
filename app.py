@@ -3,6 +3,7 @@ import os
 from os.path import join, dirname
 from dotenv import load_dotenv
 from api import create_app
+from flask import render_template
 
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
