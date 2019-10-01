@@ -59,7 +59,7 @@ def generate_special_code():
 
 
 def generate_qr(id):
-    url = pyqrcode.create('http://00901c70.ngrok.io/api/address?order_id=' + str(id))
+    url = pyqrcode.create('http://104.197.105.216/api/address?order_id=' + str(id))
     url.svg('order_'+str(id)+'.svg', scale=8)
     return('order_' + str(id) + '.svg')
 
