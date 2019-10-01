@@ -26,7 +26,7 @@ def create_app(env, additional_settings={}):
     # Namespace
     from api.main import api as api_nsp
     api = Api(version="1.0",
-              title="Shipy Module",
+              title="EnSa API Module",
               doc='/docs')
     api.add_namespace(api_nsp, path='')
     api.init_app(app)

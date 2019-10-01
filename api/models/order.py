@@ -10,7 +10,7 @@ class Order(db.Model):
     product_id = db.Column(db.Integer)
     product_title = db.Column(db.VARCHAR(10))
     product_thumbnail_url = db.Column(db.String)
-    current_status = db.Column(db.VARCHAR(10), default='NewOrder')
+    current_status = db.Column(db.VARCHAR(100), default='NewOrder')
     receiver_name = db.Column(db.String)
     delivery_address = db.Column(db.VARCHAR(200))
     delivery_latitude = db.Column(db.Float)
